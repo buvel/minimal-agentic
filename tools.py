@@ -6,30 +6,6 @@ from langchain.tools import tool
 
 from rag import faiss_retriever
 
-# langchain is having trouble parsing inner docstrings for some reason, so we break them out here
-
-DEHASHED_DESC = """
-    Returns sample breach data for a given email address (proxy for live DeHashed search).
-
-    This function simulates querying the DeHashed API and returns static sample
-    breach results. Intended for demonstration or testing environments.
-
-    Returns:
-        list[dict[str, str]]: A list of dictionaries, each representing a breach record
-        with personal and breach details.
-
-    Example:
-        >>> dehashed_search_by_email_proxy()
-        [
-            {
-                "id": "1234567890",
-                "first_name": "Adam",
-                ...
-            },
-            ...
-        ]
-    """
-
 RAG_DESC = """
     Searches the local document database for information related to the specified identifier.
 
@@ -52,6 +28,27 @@ RAG_DESC = """
 
 @tool(parse_docstring=True)
 def dehashed_search_by_email_proxy() -> List[Any]:
+    """
+    Returns sample breach data for a given email address (proxy for live DeHashed search).
+
+    This function simulates querying the DeHashed API and returns static sample
+    breach results. Intended for demonstration or testing environments.
+
+    Returns:
+        list[dict[str, str]]: A list of dictionaries, each representing a breach record
+        with personal and breach details.
+
+    Example:
+        >>> dehashed_search_by_email_proxy()
+        [
+            {
+                "id": "1234567890",
+                "first_name": "Adam",
+                ...
+            },
+            ...
+        ]
+    """
 
     return [
         {
@@ -91,7 +88,6 @@ def dehashed_search_by_email_proxy() -> List[Any]:
     ]
 
 
-#### - unused in demo
 @tool
 def dehashed_search_by_email(
     api_key: str, email: str, page_size: int = 25
@@ -141,5 +137,24 @@ def dehashed_search_by_email(
 
 @tool
 def search_local_database(identifier: str) -> str:
+    """
+    Searches the local document database for information related to the specified identifier.
+
+    This function performs a query on the local FAISS-backed document store using the provided
+    identifier, which could represent a unique person, event, or keyword. It returns the
+    concatenated content of all matching documents for further analysis or display.
+
+    Args:
+        identifier (str): Unique term, name, or keyword to search in the local document database.
+
+    Returns:
+        str: Joined text content of all relevant documents found by the search. If no results are found,
+        the returned string will be empty.
+
+    Example:
+        >>> search_local_database("John Doe")
+        'John Doe was last seen ...\n\nKnown associates include ...'
+    """
+
     results = faiss_retriever.get_relevant_documents(identifier)
     return "\n\n".join([doc.page_content for doc in results])

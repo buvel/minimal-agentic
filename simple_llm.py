@@ -9,8 +9,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import Tool
 from langchain_openai import ChatOpenAI
 
-from tools import (DEHASHED_DESC, RAG_DESC, dehashed_search_by_email_proxy,
-                   search_local_database)
+from tools import dehashed_search_by_email_proxy, search_local_database
 
 ### - A simple Agentic Workflow to Create Reports Using Personal Data
 # data is spoofed, but follows the structure of real world use cases.
@@ -26,10 +25,12 @@ TOOLS = [
     Tool.from_function(
         dehashed_search_by_email_proxy,
         name="dehashed_search_by_email_proxy",
-        description=DEHASHED_DESC,
+        description=dehashed_search_by_email_proxy.__doc__,
     ),
     Tool.from_function(
-        search_local_database, name="search_local_database", description=RAG_DESC
+        search_local_database,
+        name="search_local_database",
+        description=search_local_database.__doc__,
     ),
 ]
 
