@@ -1,0 +1,28 @@
+json to text export of forum common to those looking for access to illicit drug use. From research we know that "curiouscat93" == Adam Baker.
+
+[
+  {
+    "username": "curiouscat93",
+    "posted": "2023-06-15 13:22",
+    "title": "Looking for reliable connections in Sydney",
+    "body": "Hey everyone,\nI’m new in town and just wondering where people go for party supplies these days. Would appreciate a DM from someone in the know."
+  },
+  {
+    "username": "notfromaround",
+    "posted": "2023-06-16 09:15",
+    "title": "Re: Finding alternatives",
+    "body": "Does anyone know if the scene around central station is still good? Looking for something special for this weekend—help appreciated!"
+  },
+  {
+    "username": "sidney_fun",
+    "posted": "2023-06-16 11:40",
+    "title": "Need some assistance",
+    "body": "Hey,\nIs there a safe telegram group where I can talk to trusted people? Not comfortable posting too many details here but looking for some green or maybe something stronger."
+  },
+  {
+    "username": "ask_no_questions",
+    "posted": "2023-06-16 14:55",
+    "title": "Messenger help?",
+    "body": "Can someone who’s experienced drop me a message? Not sure the best way to get what I’m after these days. Any help would mean a lot."
+  }
+]

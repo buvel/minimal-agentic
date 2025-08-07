@@ -1,0 +1,116 @@
+The follwing is a plain text dump of a facebook discussion with Adam Baker participating
+{
+  "data": [
+    {
+      "id": "12345_1",
+      "from": {
+        "name": "Katie Lee",
+        "id": "u001"
+      },
+      "message": "Do you think governments can generally be trusted, or is whistleblowing necessary to keep them in check?",
+      "created_time": "2024-06-18T08:00:00+0000",
+      "comments": {
+        "data": [
+          {
+            "id": "12345_2",
+            "from": {
+              "name": "Adam Baker",
+              "id": "u002"
+            },
+            "message": "Absolutely not! Governments have a long history of hiding the truth. Whistleblowers are heroes—we owe them so much. Without their courage, the public would stay in the dark about corruption and abuse. We need to defend them at all costs!",
+            "created_time": "2024-06-18T08:05:00+0000",
+            "comments": {
+              "data": [
+                {
+                  "id": "12345_6",
+                  "from": {
+                    "name": "Tom Williams",
+                    "id": "u004"
+                  },
+                  "message": "Don't you think some information needs to stay confidential for public safety? Not all whistleblowers have good intentions.",
+                  "created_time": "2024-06-18T08:17:00+0000"
+                },
+                {
+                  "id": "12345_7",
+                  "from": {
+                    "name": "Adam Baker",
+                    "id": "u002"
+                  },
+                  "message": "I get that, Tom, but how else are we supposed to trust anything if everything important is kept secret? Secrecy just breeds more abuse. We NEED people willing to risk everything and tell the world what’s really happening!",
+                  "created_time": "2024-06-18T08:20:00+0000"
+                }
+              ]
+            }
+          },
+          {
+            "id": "12345_3",
+            "from": {
+              "name": "Priya Nair",
+              "id": "u003"
+            },
+            "message": "Transparency is crucial, but the process should be responsible. Whistleblowers should bring forward evidence of real wrongdoing, not just anything for attention.",
+            "created_time": "2024-06-18T08:07:00+0000",
+            "comments": {
+              "data": [
+                {
+                  "id": "12345_8",
+                  "from": {
+                    "name": "Adam Baker",
+                    "id": "u002"
+                  },
+                  "message": "But Priya, what’s considered 'responsible' often just means 'safe for those in power.' The stakes are too high to play it safe.",
+                  "created_time": "2024-06-18T08:22:00+0000"
+                }
+              ]
+            }
+          },
+          {
+            "id": "12345_4",
+            "from": {
+              "name": "Tom Williams",
+              "id": "u004"
+            },
+            "message": "I think the majority of government workers do their jobs honestly. Not every system is corrupt—constant suspicion can be damaging too.",
+            "created_time": "2024-06-18T08:10:00+0000"
+          },
+          {
+            "id": "12345_5",
+            "from": {
+              "name": "Elena Garcia",
+              "id": "u005"
+            },
+            "message": "There’s a difference between healthy skepticism and conspiracy thinking. Whistleblowers reveal things, but we should always double-check the facts.",
+            "created_time": "2024-06-18T08:12:00+0000"
+          },
+          {
+            "id": "12345_9",
+            "from": {
+              "name": "Liam O'Connor",
+              "id": "u006"
+            },
+            "message": "If nobody ever spoke out, Watergate or Snowden would never have happened. Silence never helped anyone but those with something to hide.",
+            "created_time": "2024-06-18T08:14:00+0000"
+          },
+          {
+            "id": "12345_10",
+            "from": {
+              "name": "Maya Zhang",
+              "id": "u007"
+            },
+            "message": "I worry about whistleblowers being targeted. They risk so much and often end up paying a high price just for telling the truth.",
+            "created_time": "2024-06-18T08:15:00+0000"
+          },
+          {
+            "id": "12345_11",
+            "from": {
+              "name": "Adam Baker",
+              "id": "u002"
+            },
+            "message": "Exactly, Maya! That's why we need to stand with them, no matter what. Too often, society just labels them troublemakers instead of listening to what they have to say.",
+            "created_time": "2024-06-18T08:25:00+0000"
+          }
+        ]
+      }
+    }
+  ]
+}
